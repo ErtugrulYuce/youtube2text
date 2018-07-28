@@ -47,7 +47,8 @@ public class youtubeTestH {
 		 System.out.println("Enter positive number");
 		 expectedSubtitleNumber=sc.nextInt();
 		 }
-
+//use two different drivers because of need to handle all lists and subtitles on different pades 
+		 
 		WebDriverManager.chromedriver().setup();
 		driverYoutube = new ChromeDriver();
 		driverYoutube.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
